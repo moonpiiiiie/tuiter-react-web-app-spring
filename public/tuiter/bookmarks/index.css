@@ -1,0 +1,156 @@
+body {
+    font-family: "Arial";
+    background-color: black;
+    border-color: rgb(47, 51, 54);
+    border-style: solid;
+}
+
+.wd-top-div {
+    margin-left: 16px;
+    padding-bottom: 12px;
+    border-bottom: lightgray solid 1px;
+}
+.wd-top-title {
+    font-size: 20px;
+    color: white;
+    margin-left: 16px;
+    margin-top: 12px;
+    margin-bottom: 4px;
+}
+
+.wd-top-handle {
+    font-size: 13px;
+    color: lightgray;
+    margin-left: 16px;
+    margin-bottom: 12px;
+}
+
+.wd-dots-blue{
+    color: rgb(29, 161, 242);
+    font-size: 20px;
+    float: right;
+    margin-right: 16px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.wd-post-rec {
+    clear: both;
+    color: white;
+    margin-left: 16px;
+    margin-bottom: 12px;
+    border-bottom: lightgray solid 1px;
+    overflow: hidden;
+}
+
+
+.wd-avatar-img {
+    float: left;
+    margin-left: 16px;
+    margin-top: 12px;
+    margin-right: 12px;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+}
+
+.wd-other {
+    float: left;
+    max-width: 506px;
+}
+
+.wd-author {
+    margin-top: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.wd-author-handle {
+    margin-top: 12px;
+    font-size: 15px;
+    color: lightgray;
+    font-weight: normal;
+}
+
+.wd-dots-gray{
+    margin-top: 12px;
+    color: lightgray;
+    font-size: 15px;
+    float: right;
+    margin-right: 16px;
+    display: inline-block;
+}
+
+.wd-post-content {
+    font-size: 15px;
+    margin-right: 16px;
+    margin-bottom: 12px;
+    max-width: 506px;
+    margin-top: 12px;
+}
+.wd-post-description {
+    border: 1px solid lightgray;
+    border-radius: 20px;
+}
+.wd-post-img {
+    width: 504px;
+    height: 264px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: 12px;
+}
+
+.wd-post-title {
+    font-size: 15px;
+    color:white;
+    font-weight: bold;
+    padding: 12px;
+}
+
+.wd-post-des {
+    margin-top: 0px;
+    font-size: 15px;
+    color: lightgray;
+    padding: 12px;
+}
+
+.wd-icons {
+    margin-top: 12px;
+    color: lightgray;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.wd-numbers {
+    padding-right: 15px;
+}
+
+.wd-numbers-heart{
+    color: red;
+    padding-right: 15px;
+}
+.wd-icon-comment {
+    padding-left: 5px;
+    margin-right: 12px;
+    text-decoration: none;
+}
+
+.wd-icon-retuit {
+    padding-left: 35px;
+    margin-right: 12px;
+    text-decoration: none;
+}
+
+.wd-icon-heart {
+    padding-left: 35px;
+    margin-right: 12px;
+    text-decoration: none;
+    color: red;
+}
+
+.wd-icon-share {
+    padding-left: 35px;
+    margin-right: 12px;
+    text-decoration: none;
+}

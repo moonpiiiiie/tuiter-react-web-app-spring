@@ -1,0 +1,138 @@
+
+body {
+    font-family: "Arial";
+    background-color: black;
+    color: white;
+    border-color: rgb(47, 51, 54);
+    border-style: solid;
+    padding-left: 16px;
+}
+
+.wd-search {
+    border-radius: 50px;
+    border-style: none;
+    background-color: darkgray;
+    color: white;
+    margin-left: 16px;
+    margin-right: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 50%
+}
+
+.wd-gear {
+    font-size: 40px;
+    color: rgb(29, 161, 242);
+    text-decoration: none;
+    display: inline;
+    position: absolute;
+    margin-left: 12px;
+}
+
+.wd-nav-tabs {
+    border-bottom: solid 4px rgb(110, 118, 125);
+    text-decoration: none;
+    list-style-type: none;
+    color: rgb(110, 118, 125);
+}
+
+.wd-nav-tabs li {
+    font-size: 15px;
+    font-family: "Arial";
+    padding: 16px;
+    display: inline-block;
+    border-bottom: none;
+}
+
+.wd-nav-tabs .wd-selected {
+    color: rgb(29, 161, 242);
+    border-bottom: solid 4px rgb(29, 161, 242);
+}
+
+.wd-hr {
+    color: rgb(47, 51, 54);
+    background-color: rgb(47, 51, 59);
+    border: solid 1px;
+}
+
+.wd-total-content {
+    clear: both;
+    padding: 16px;
+    position:relative;
+}
+.wd-content {
+    float: left;
+    width: 80%;
+    list-style-type: none;
+}
+
+.wd-dots-white{
+    color: white;
+    font-size: 20px;
+    float: right;
+    margin-right: 16px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.wd-topic {
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.wd-title {
+    margin-bottom: 4px;
+
+}
+
+.wd-dots-gray {
+    color:rgb(110, 118, 125);
+    font-size: 20px;
+    float: right;
+    margin-right: 16px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.wd-hr2 {
+    color: rgb(47, 51, 54);
+    background-color: rgb(47, 51, 59);
+    border: solid 1px;
+    margin-top: 70px;
+}
+
+.wd-icon {
+    width: 15px;
+    height: 15px;
+}
+
+.wd-image{
+    width: 30px;
+    height:30px;
+}
+
+.wd-news-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    position:absolute;
+    right:28px;
+    top:25px;
+    border-right: 16px;
+
+}
+
+.wd-source-title {
+    color: white;
+    font-size: 13px;
+    margin: 4px;
+    font-weight: bold;
+}
+
+.wd-hr3 {
+    color: rgb(47, 51, 54);
+    background-color: rgb(47, 51, 59);
+    border: thin;
+    margin-top: 70px;
+}
