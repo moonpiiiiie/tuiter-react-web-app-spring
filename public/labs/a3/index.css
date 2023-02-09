@@ -1,7 +1,4 @@
-/*p {
-   background-color: blue;
-   color: white;
-}*/
+
 p#id-selector-1 {
  background-color: red;
  color: white;
@@ -312,8 +309,7 @@ p#id-selector-2 {
    align-items: flex-start;
 }
 .flex-container-ver-center{
-    justify-content: space-evenly;
-   align-items: center;
+   justify-content: space-evenly;
 }
 
 .flex-box {
