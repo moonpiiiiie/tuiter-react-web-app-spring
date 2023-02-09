@@ -11,7 +11,7 @@ body {
 
 
 
-.wd-lg-content p{
+.wd-lg-content #title{
     font-weight: bold;
     font-size: 20px;
     position: absolute;
@@ -20,6 +20,33 @@ body {
     left: 15px;
 }
 
+.wd-lg-content #subtitle{
+    font-size: 15px;
+    position: absolute;
+    color: white;
+    bottom: 35px;
+    left: 15px;
+}
+
+.wd-left-div > a{
+   padding: 10px;
+}
+
+.wd-left-div > a >i{
+   padding: 10px;
+}
+
+.wd-left-div > button {
+    background-color: rgb(83,145,233);
+    color: white;
+    font-weight: bold;
+}
+
+.list-group-item.active{
+    color:black;
+    background-color:white;
+    font-weight:bold;
+}
 
 .wd-lg-content{
     position: relative;
@@ -49,13 +76,13 @@ body {
 .wd-search {
 	width: 90%;
 	height: 50px;
-	border: solid 0.5px lightgray;
+	border: solid 0.5px rgb(238, 241, 242);
     /*rgb(238, 241, 242)*/
 	border-radius: 30px;
 	display: flex;
 	align-items: center;
 	padding: 20px;
-	background-color:white;
+	background-color:rgb(238, 241, 242);
 }
 
 .wd-search > input{
@@ -65,19 +92,29 @@ body {
 	outline: none;
 	font-size: 15px;
 	padding-left: 10px;
-    background-color:white;
+    background-color:rgb(238, 241, 242);
+}
+.wd-mid-div {
+    border: solid 0.5px rgb(238, 241, 242);
+}
+.wd-bg-lightgray{
+    background-color:rgb(238, 241, 242);
+    border:none;
 }
 
-
+.wd-right-ul{
+border-radius: 20px
+}
 
 .list-group-item{
   overflow:hidden;
+  border:none;
 }
 
 .wd-follow-image{
     width: 40px;
     height:40px;
-    border-radius: 20px;
+    border-radius: 5px;
     float:left;
 }
 
@@ -109,6 +146,28 @@ body {
     border-radius: 15px;
 }
 
+.wd-right-ul .list-group-item{
+    padding:15px;
+}
+
+.nav-tabs {
+    border-bottom: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1px;
+}
+#active-nav {
+    border: none;
+    font-weight: bold;
+    border-bottom: 4px solid rgb(83,145,233);
+}
+#active-nav > a {
+    color: #495057;
+}
+.nav-link {
+    padding: 0px;
+    color:rgb(140, 146, 153);
+}
 @media only screen and (max-width: 600px) {
   .wd-right-div {
   display:none;

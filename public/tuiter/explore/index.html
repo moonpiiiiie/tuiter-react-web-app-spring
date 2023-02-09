@@ -15,63 +15,64 @@
     <div class="row">
         <div class="wd-left-div list-group col col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2">
             <a href="#" class="list-group-item list-group-item-action">
-                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-t" style="color:rgb(83,145,233)"></i>
             </a>
             <a href="../home.html" class="list-group-item list-group-item-action">
-                <i class="fa fa-home"></i> <span class="d-xl-inline d-lg-none d-md-none d-sm-none d-none">Home</span>
+                <i class="fa-regular fa-building"></i> <span class="d-xl-inline d-lg-none d-md-none d-sm-none d-none">Home</span>
             </a>
             <a href="index.html" class="list-group-item list-group-item-action active">
                 <i class="fa-solid fa-hashtag"></i> <span class="d-xl-inline d-lg-none d-md-none d-sm-none d-none">Explore</span>
             </a>
             <a href="../notifications.html" class="list-group-item list-group-item-action">
-                <i class="fa fa-bell"></i> <span class="d-xl-inline d-lg-none d-md-none d-sm-none d-none">Notifications</span>
+                <i class="fa-regular fa-bell"></i> <span class="d-xl-inline d-lg-none d-md-none d-sm-none d-none">Notifications</span>
             </a>
             <a href="../messages.html" class="list-group-item list-group-item-action">
-                <i class="fa fa-envelope"></i> <span class="d-xl-inline d-lg-none d-md-none d-sm-none d-none">Messages</span>
+                <i class="fa-regular fa-envelope"></i> <span class="d-xl-inline d-lg-none d-md-none d-sm-none d-none">Messages</span>
             </a>
             <a href="../bookmarks/index.html" class="list-group-item list-group-item-action">
-                <i class="fa fa-bookmark"></i> <span class="d-xl-inline d-lg-none d-md-none d-sm-none d-none">Bookmarks</span>
+                <i class="fa-regular fa-bookmark"></i> <span class="d-xl-inline d-lg-none d-md-none d-sm-none d-none">Bookmarks</span>
             </a>
             <a href="../lists.html" class="list-group-item list-group-item-action">
                 <i class="fa fa-bars"></i> <span class="d-xl-inline d-lg-none d-md-none d-sm-none d-none">Lists</span>
             </a>
             <a href="../profile.html" class="list-group-item list-group-item-action">
-                <i class="fa fa-user"></i> <span class="d-xl-inline d-lg-none d-md-none d-sm-none d-none">Profile</span>
+                <i class="fa-regular fa-user"></i> <span class="d-xl-inline d-lg-none d-md-none d-sm-none d-none">Profile</span>
             </a>
             <a href="#" class="list-group-item list-group-item-action">
                 <i class="fa fa-ellipsis-h"></i> <span class="d-xl-inline d-lg-none d-md-none d-sm-none d-none">More</span>
             </a>
-            <button type="submit" class="mt-3 btn btn-primary rounded-pill wd-tweet-btn">Tweet</button>
+            <button type="submit" class="mt-3 btn rounded-pill wd-tweet-btn">Tweet</button>
 
         </div>
         <div class="wd-mid-div col col-xl-6 col-lg-6 col-md-10 col-sm-10 col-10">
-            <div class="wd-search-field mb-3">
+            <div class="wd-search-field mt-2 mb-3">
                 <div class="wd-search">
                     <i class="fa fa-search" aria-hidden="true"></i>
                     <input placeholder=" Search Tuiter">
                 </div>
-                <i class="fa fa-thin fa-gear fa-2x" style="color:rgb(51,111,255)"></i>
+                <i class="fa fa-thin fa-gear"></i>
             </div>
-            <ul class="nav nav-tabs mb-3">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">For you</a>
+            <ul class="nav nav-tabs mx-3">
+                <li id="active-nav" class="nav-item pb-2">
+                    <a class="nav-link" href="#">For you</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item pb-2">
                     <a class="nav-link" href="#">Trending</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item pb-2">
                     <a class="nav-link" href="#">News</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item pb-2">
                     <a class="nav-link" href="#">Sports</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item pb-2">
                     <a class="nav-link" href="#">Entertainment</a>
                 </li>
             </ul>
             <div class="wd-lg-content">
                 <img src="spacex.png">
-                <p>SpaceX's Starship</p>
+                <p id="subtitle">2023 SpaceX LIVE</p>
+                <p id="title">SpaceX's Starship</p>
             </div>
             <div class="list-group">
                 <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
@@ -81,32 +82,37 @@
                             <p class="wd-text-title">ReactJS <i class="fa-solid fa-circle-check"></i> <span class="wd-gray-text" style="font-weight:lighter">- 2h </span> </p>
                             <p class="wd-text-title">React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs</p>
                         </div>
-                        <div class="wd-mid-sm-image">
-                            <img class="wd-news-image" src="react.png">
+                        <div>
+                           <small><i class="fa fa-ellipsis-h"></i></small>
                         </div>
                     </div>
                 </a>
                 <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
                     <div class="d-flex w-100 justify-content-between">
                         <div>
-                            <p class="wd-text-title">JavaScript <i class="fa-solid fa-circle-check"></i> <span class="wd-gray-text" style="font-weight:lighter">- 2h </span> </p>
-                            <p class="wd-text-title">JavaScript is programming language that can run on browsers as well as desktops</p>
-                            <p class="wd-text-subtitle">123K Tweets</p>
+                            <p class="wd-text-title">#InfinityPool </p>
+                            <p class="wd-text-title wd-gray-text">See the electrifying thriller Infinity Pool in theaters - if you dare</p>
+                            <p class="wd-text-subtitle wd-gray-text">⤴️ Promoted by NEON</p>
                         </div>
-                        <div class="wd-mid-sm-image">
-                            <img class="wd-news-image" src="js.png">
+                        <div>
+                            <small><i class="fa fa-ellipsis-h"></i></small>
                         </div>
                     </div>
                 </a>
                 <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
                     <div class="d-flex w-100 justify-content-between">
                         <div>
-                            <p class="wd-text-subtitle wd-gray-text">Web Development</p>
-                            <p class="wd-text-title">jQuery</p>
-                            <p class="wd-text-subtitle wd-gray-text">123K Tweets</p>
+                            <p class="wd-text-subtitle wd-gray-text">Politics Trending</p>
+                            <p class="wd-text-title">Durham</p>
+                            <p class="wd-text-subtitle wd-gray-text">
+                                Trending with
+                                <span style="color:rgb(83,145,233)">Barr</span>
+                                ,
+                                <span style="color:rgb(83,145,233)">Barr</span>
+                            </p>
                         </div>
-                        <div class="wd-mid-sm-image">
-                            <img class="wd-news-image" src="jquery.png">
+                        <div>
+                            <small><i class="fa fa-ellipsis-h"></i></small>
                         </div>
                     </div>
                 </a>
@@ -117,78 +123,77 @@
                             <p class="wd-text-title">NodeJS <i class="fa-solid fa-circle-check"> </i> <span class="wd-gray-text" style="font-weight:lighter">- 2h </span> </p>
                             <p class="wd-text-subtitle wd-gray-text">123K Tweets</p>
                         </div>
-                        <div class="wd-mid-sm-image">
-                            <img class="wd-news-image" src="nodeJS.png">
+                        <div>
+                            <small><i class="fa fa-ellipsis-h"></i></small>
                         </div>
                     </div>
                 </a>
             </div>
         </div>
         <div class="wd-right-div col col-xl-4 col-lg-4">
-            <ul class="list-group">
-                <li class="list-group-item" style="font-weight:bold">Who to follow</li>
-                <li class="list-group-item">
+            <ul class="wd-right-ul list-group">
+                <li class="wd-bg-lightgray list-group-item" style="font-weight:bold">Who to follow</li>
+                <li class="wd-bg-lightgray list-group-item">
                     <div>
-                        <img class="wd-follow-image" src="java.png">
+                        <img class="wd-follow-image" src="northeastern.png">
                     </div>
                     <div class="wd-follow-text ps-2">
-                        <p class="wd-text-title">Java <i class="fa-solid fa-circle-check"></i></p>
-                        <p class="wd-text-subtitle">@Java</p>
+                        <p class="wd-text-title">Northeastern U. <i class="fa-solid fa-circle-check" style="color:rgb(83,145,233)"></i></p>
+                        <p class="wd-text-subtitle">@Northeastern</p>
                     </div>
                     <div>
-                        <button type="submit" class="btn btn-primary rounded-pill wd-follow-btn">Follow</button>
+                        <button type="submit" class="btn btn-dark rounded-pill wd-follow-btn">Follow</button>
                     </div>
                 </li>
-                <li class="list-group-item">
-                    <div>
-                        <img class="wd-follow-image" src="relativespace.png">
-                    </div>
-                    <div class="wd-follow-text ps-2">
-                        <p class="wd-text-title">Relativity Space <i class="fa-solid fa-circle-check"></i></p>
-                        <p class="wd-text-subtitle">@relativityspace</p>
-                    </div>
-                    <div>
-                        <button type="submit" class="btn btn-primary rounded-pill wd-follow-btn">Follow</button>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                    <div>
-                        <img class="wd-follow-image" src="virgingalatic.png">
-                    </div>
-                    <div class="wd-follow-text ps-2">
-                        <p class="wd-text-title">Virgin Galactic <i class="fa-solid fa-circle-check"></i></p>
-                        <p class="wd-text-subtitle">@virgingalactic</p>
-                    </div>
-                    <div>
-                        <button type="submit" class="btn btn-primary rounded-pill wd-follow-btn">Follow</button>
-                    </div>
-                </li>
-                <li class="list-group-item">
 
+                <li class="wd-bg-lightgray list-group-item">
+                    <div>
+                        <img class="wd-follow-image" src="ps.png">
+                    </div>
+                    <div class="wd-follow-text ps-2">
+                        <p class="wd-text-title">Play Station <i class="fa-solid fa-circle-check" style="color:rgb(83,145,233)"></i></p>
+                        <p class="wd-text-subtitle">@playstation</p>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-dark rounded-pill wd-follow-btn">Follow</button>
+                    </div>
+                </li>
+                <li class="wd-bg-lightgray list-group-item">
                     <div>
                         <img class="wd-follow-image" src="nasa.png">
                     </div>
                     <div class="wd-follow-text ps-2">
-                        <p class="wd-text-title">NASA <i class="fa-solid fa-circle-check"></i></p>
+                        <p class="wd-text-title">NASA <i class="fa-solid fa-circle-check" style="color:rgb(210,176,50)"></i></p>
                         <p class="wd-text-subtitle">@NASA</p>
                     </div>
                     <div>
-                        <button type="submit" class="btn btn-primary rounded-pill wd-follow-btn">Follow</button>
+                        <button type="submit" class="btn btn-dark rounded-pill wd-follow-btn">Follow</button>
                     </div>
                 </li>
-                <li class="list-group-item">
+                <li class="wd-bg-lightgray list-group-item">
                     <div>
-                        <img class="wd-follow-image" src="tesla.png">
+                        <img class="wd-follow-image" src="relativespace.png">
                     </div>
                     <div class="wd-follow-text ps-2">
-                        <p class="wd-text-title">Tesla <i class="fa-solid fa-circle-check"></i></p>
-                        <p class="wd-text-subtitle">@tesla</p>
+                        <p class="wd-text-title">Relativity Space <i class="fa-solid fa-circle-check" style="color:rgb(83,145,233)"></i></p>
+                        <p class="wd-text-subtitle">@relativityspace</p>
                     </div>
                     <div>
-                        <button type="submit" class="btn btn-primary rounded-pill wd-follow-btn">Follow</button>
+                        <button type="submit" class="btn btn-dark rounded-pill wd-follow-btn">Follow</button>
                     </div>
                 </li>
+                <li class="wd-bg-lightgray list-group-item">
+                    <div class="wd-follow-text ps-2">
+                        <p class="wd-text-subtitle" style="color:rgb(83,145,233)">Show more</p>
+                    </div>
+
+                </li>
             </ul>
+            <div class="mt-3">
+                <p class="wd-gray-text mb-0 ps-2">Terms of Service&nbsp;&nbsp;&nbsp;&nbsp;Privacy Policy&nbsp;&nbsp;&nbsp;&nbsp;Cookie Policy</p>
+                <p class="wd-gray-text mb-0 ps-2">Accessibility&nbsp;&nbsp;&nbsp;&nbsp;Ads info&nbsp;&nbsp;&nbsp;&nbsp;More...</p>
+                <p class="wd-gray-text mb-0 ps-2">©Tuiter, Inc.</p>
+            </div>
         </div>
     </div>
 
