@@ -37,6 +37,25 @@ body {
     align-items: center;
 }
 
+.d-flex > .wd-follow-left{
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+}
+
+.d-flex > .wd-follow-right{
+  display:flex;
+  align-items: center;
+}
+
+.d-flex > .wd-follow-left > div > img{
+  /*width:15%;*/
+}
+
+.d-flex > .wd-follow-left > div > p{
+  /*width:25%;*/
+}
+
 .wd-mid-sm-image {
     float:right;
 }
@@ -50,7 +69,6 @@ body {
 	width: 90%;
 	height: 50px;
 	border: solid 0.5px lightgray;
-    /*rgb(238, 241, 242)*/
 	border-radius: 30px;
 	display: flex;
 	align-items: center;
@@ -72,6 +90,10 @@ body {
 
 .list-group-item{
   overflow:hidden;
+}
+
+.d-flex .wd-follow-text {
+    float:left;
 }
 
 .wd-follow-image{
@@ -100,6 +122,7 @@ body {
 }
 
 .wd-follow-btn {
+
     float:right;
 }
 
