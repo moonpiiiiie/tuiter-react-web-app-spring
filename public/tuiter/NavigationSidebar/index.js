@@ -1,14 +1,17 @@
-const NavigationSidebar = () => {
+const NavigationSidebar = (d) => {
+    $(document).ready(function () {
+        $('#' + d).addClass('active');
+    });
  return(`
    <div class="list-group">
      <a class="list-group-item" href="/">
        <i class="fab fa-twitter">
        </i>
      </a>
-     <a href="../home.html" class="list-group-item list-group-item-action">
+     <a href="../HomeScreen/index.html" id="HomeScreen" class="list-group-item list-group-item-action">
         <i class="fa-regular fa-building"></i> <span class="d-xl-inline d-lg-none d-md-none d-sm-none d-none">Home</span>
      </a>
-     <a href="index.html" class="list-group-item list-group-item-action active">
+     <a href="../explore/index.html" id="ExploreScreen"  class="list-group-item list-group-item-action">
         <i class="fa-solid fa-hashtag"></i> <span class="d-xl-inline d-lg-none d-md-none d-sm-none d-none">Explore</span>
      </a>
      <a href="../notifications.html" class="list-group-item list-group-item-action">
