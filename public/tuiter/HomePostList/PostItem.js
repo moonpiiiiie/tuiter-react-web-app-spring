@@ -1,7 +1,7 @@
 const PostItem = (post) => {
 
     return(`
-    <div class="d-flex w-100 mx-3">
+    <div class="d-flex w-100">
         <div class="me-2">
             <img class="wd-avatar-img" src=${post.avatarIcon}>
         </div>
@@ -26,21 +26,15 @@ const PostItem = (post) => {
                   }
             </div>
             <div class="wd-icons">
-                <a class="wd-icon-comment" href="#">
-                    <span><i class="fa-regular fa-comment" style="color:rgb(83,83,83)"></i></span>
-                </a>
-                <span class="wd-numbers">${post.comment}</span>
-                <a class="wd-icon-retuit" href="#">
-                    <span><i class="fa-solid fa-retweet" style="color:rgb(83,83,83)"></i></span>
-                </a>
-                <span class="wd-numbers">${post.retuit}</span>
-                <a class="wd-icon-heart"href="#">
-                    <span>️<i class="fa-regular fa-heart" style="color:rgb(83,83,83)"></i>️</span>
-                </a>
-                <span>${post.like}</span>
-                <a class="wd-icon-share" href="#">
-                    <span><i class="fa-solid fa-arrow-up-from-bracket" style="color:rgb(83,83,83)"></i>️</span>
-                </a>
+
+                <span class="pe-4"><i class="fa-regular fa-comment me-2" style="color:rgb(83,83,83)"></i> ${post.comment}</span>
+
+                <span class="pe-4"><i class="fa-solid fa-retweet me-2" style="color:rgb(83,83,83)"></i> ${post.retuit}</span>
+
+                <span class="pe-4">️<i class="fa-regular fa-heart me-2" style="color:rgb(83,83,83)"></i>️ ${post.like}</span>
+
+                <span class="pe-4"><i class="fa-solid fa-arrow-up-from-bracket me-2" style="color:rgb(83,83,83)"></i>️</span>
+
             </div>
         </div>
     </div>

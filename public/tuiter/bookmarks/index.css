@@ -1,8 +1,6 @@
 body {
     font-family: "Arial";
     background-color: black;
-    border-color: rgb(47, 51, 54);
-    border-style: solid;
 }
 
 .wd-top-div {
@@ -107,8 +105,6 @@ body {
 }
 
 .wd-post-title {
-
-
     font-size: 15px;
     color:white;
     font-weight: bold;
@@ -127,19 +123,17 @@ body {
 .wd-icons {
     margin-top: 12px;
     color: rgb(83,83,83);
-    font-size: 12px;
+    font-size: 16px;
     margin-bottom: 12px;
 }
 
-.wd-icons->a {
-    padding-right: 15px;
+.wd-icons->span,i{
+    padding-right: 8px;
 }
-
-.wd-numbers-heart{
-    color: red;
-    padding-right: 15px;
+.wd-numbers {
+    margin-right: 30px;
 }
-.wd-icon-comment {
+/*.wd-icon-comment {
     padding-left: 5px;
     margin-right: 12px;
     text-decoration: none;
@@ -162,4 +156,4 @@ body {
     padding-left: 35px;
     margin-right: 12px;
     text-decoration: none;
-}
+}*/
