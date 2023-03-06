@@ -19,7 +19,7 @@ const PostSummaryItem = (
        <div>{post.title}</div>
      </div>
      <div className="col-2">
-       <img width={70} height={70} className="float-end rounded-3" src={`/tuiter/explore/${post.image}`}/>
+       <img alt="" width={70} height={70} className="float-end rounded-3" src={`/tuiter/explore/${post.image}`}/>
      </div>
    </div>
   </li>

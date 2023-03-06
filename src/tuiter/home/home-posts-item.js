@@ -32,7 +32,7 @@ const HomePostItem = (
     <div class="d-flex w-100">
 
         <div className="me-2">
-            <img width={48}  className="float-start rounded-circle" src={`/tuiter/images/${homepost.avatarIcon}`}/>
+            <img alt="" width={48}  className="float-start rounded-circle" src={`/tuiter/images/${homepost.avatarIcon}`}/>
         </div>
         <div>
             <div>
@@ -43,7 +43,7 @@ const HomePostItem = (
             <p className="wd-post-content">{homepost.tuitContent} -> <Link to="#" className="text-decoration-none ms-1">{homepost.tuitLink}</Link></p>
             <div className="wd-post-description">
                 <div className="wd-post-img-container">
-                    <img className="wd-post-img" src={`/tuiter/images/${homepost.tuitImage}`}/>
+                    <img alt="" className="wd-post-img" src={`/tuiter/images/${homepost.tuitImage}`}/>
                 </div>
                 {homepost.cardTitle ?
                      <div className="wd-post-content-container">
