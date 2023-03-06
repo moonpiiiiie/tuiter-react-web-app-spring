@@ -53,10 +53,10 @@ const HomePostItem = (
                   }
             </div>
             <div className="wd-icons wd-gray">
-                <span className="pe-5 me-2"><i class="bi bi-chat-left-dots"></i> {homepost.comment}</span>
-                <span className="pe-5 me-2"><i class="bi bi-arrow-repeat"></i> {homepost.retuit}</span>
-                <span className="pe-5 me-2">️<i class="bi bi-heart"></i>️ {homepost.like}</span>
-                <span className="pe-5 me-2"><i class="bi bi-arrow-bar-up"></i>️</span>
+                <i class="bi bi-chat-left-dots"></i><span className="ps-2 pe-5 me-2"> {homepost.comment}</span>
+                <i class="bi bi-arrow-repeat"></i><span className="ps-2 pe-5 me-2"> {homepost.retuit}</span>
+                <i class="bi bi-heart"></i>️<span className="ps-2 pe-5 me-2">️ {homepost.like}</span>
+                <i class="bi bi-arrow-bar-up"></i>️<span className="ps-2 pe-5 me-2"></span>
             </div>
             {homepost.showThread==="true" ?
                 <Link to="#" className="text-decoration-none ms-1">Show thread</Link> : ''
