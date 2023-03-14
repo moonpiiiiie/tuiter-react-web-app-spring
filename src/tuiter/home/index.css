@@ -16,7 +16,10 @@
     margin-right: 16px;
     margin-bottom: 12px;
     max-width: 506px;
+}
 
+.wd-red {
+   color:red;
 }
 .wd-post-content-container {
     border-top: 0.5px solid rgb(83,83,83);

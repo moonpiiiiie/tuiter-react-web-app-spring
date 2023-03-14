@@ -1,8 +1,12 @@
-import HomePostList from "./home-posts-list";
+import TuitList from "../tuits/TuitList";
+import WhatsHappening from "./whats-happening";
+
 function HomeComponent() {
  return(
         <div style={{"position": "relative"}}>
-          <HomePostList/>
+        <h4>Home</h4>
+        <WhatsHappening/>
+        <TuitList/>
         </div>
  );
 };
