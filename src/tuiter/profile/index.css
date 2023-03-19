@@ -1,5 +1,4 @@
-.position-relative-up-left {
-    position: relative;
-    bottom: 60px;
+.profile-container {
     left: 20px;
+    bottom: -50px;
 }
