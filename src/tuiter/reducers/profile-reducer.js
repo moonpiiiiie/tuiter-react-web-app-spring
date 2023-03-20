@@ -33,7 +33,6 @@ const profileSlice = createSlice({
                 "dateJoined": action.payload.dateJoined,
                 "followingCount": action.payload.followingCount,
                 "followersCount": action.payload.followersCount, 
-                  
            });
         } 
     }

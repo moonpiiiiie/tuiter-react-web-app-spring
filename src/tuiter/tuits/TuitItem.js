@@ -1,7 +1,9 @@
 import "../home/index.css";
 import React from "react";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "./tuits-reducer";
+import {deleteTuit, likeTuit, unlikeTuit} from "./tuits-reducer";
+
+
 const TuitItem = (
  {
    tuit = {
@@ -24,6 +26,12 @@ const dispatch = useDispatch();
 const deleteTuitHandler = (id) => {
   dispatch(deleteTuit(id));
 }
+const likeTuitHandler = (id) => {
+  dispatch(likeTuit(id));
+}
+const unlikeTuitHandler = (id) => {
+  dispatch(unlikeTuit(id));
+}
 
  return(
   <li className="list-group-item">
@@ -42,7 +50,10 @@ const deleteTuitHandler = (id) => {
             <div className="wd-icons wd-gray">
                 <i class="bi bi-chat"></i><span className="ps-2 pe-5 me-2"> {tuit.replies}</span>
                 <i class="bi bi-arrow-repeat"></i><span className="ps-2 pe-5 me-2"> {tuit.retuits}</span>
-                {tuit.liked===true ? <i class="bi bi-heart-fill wd-red"></i> : <i class="bi bi-heart-fill"></i>}
+                
+                {tuit.liked && <i onClick={() => unlikeTuitHandler(tuit)} className="bi bi-heart-fill wd-red"></i>}
+                {!tuit.liked && <i onClick={() => likeTuitHandler(tuit)} className="bi bi-heart"></i>}
+               
                 ️<span className="ps-2 pe-5 me-2">️ {tuit.likes}</span>
                 <i class="bi bi-share"></i>️<span className="ps-2 pe-5 me-2"></span>
             </div>
