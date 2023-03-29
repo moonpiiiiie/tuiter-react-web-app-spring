@@ -1,15 +1,15 @@
 import "../home/index.css";
 import React from "react";
 import {useDispatch} from "react-redux";
-import {deleteTuit, likeTuit, unlikeTuit} from "./tuits-reducer";
-
+import {likeTuit, unlikeTuit} from "./tuits-reducer";
+import { deleteTuitThunk, updateTuitThunk } from "../../services/tuits-thunks";
 
 const TuitItem = (
  {
    tuit = {
    "_id": 234,
    "topic": "Space",
-   "userName": "SpaceX",
+   "username": "SpaceX",
    "time": "2h",
    "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
    "image": "spacex.png",
@@ -23,25 +23,35 @@ const TuitItem = (
  }
 ) => {
 const dispatch = useDispatch();
+
+
 const deleteTuitHandler = (id) => {
-  dispatch(deleteTuit(id));
+  dispatch(deleteTuitThunk(id));
 }
-const likeTuitHandler = (id) => {
-  dispatch(likeTuit(id));
+const likeTuitHandler = (tuit) => {
+  dispatch(updateTuitThunk({
+      ...tuit,
+      likes: tuit.likes + 1,
+      liked: true
+  }));
 }
-const unlikeTuitHandler = (id) => {
-  dispatch(unlikeTuit(id));
+const unlikeTuitHandler = (tuit) => {
+  dispatch(updateTuitThunk({
+      ...tuit,
+      likes: tuit.likes - 1,
+      liked: false
+  }));
 }
 
  return(
   <li className="list-group-item">
     <div className="row">
         <div className="col-auto">
-            <img alt="" width={50} height={50} className="float-start rounded-circle" src={`/tuiter/explore/${tuit.image}`}/>
+            <img alt="" width={50} height={50} className="float-start rounded-circle" src={`/images/${tuit.image}`}/>
         </div>
         <div className="col-10">
             <div>
-                <span style={{ fontWeight: 'bold' }}>{tuit.userName} <i class="bi bi-check-circle-fill" style={{color: "blue"}}></i></span>
+                <span style={{ fontWeight: 'bold' }}>{tuit.username} <i class="bi bi-check-circle-fill" style={{color: "blue"}}></i></span>
                 <span className="wd-gray"> {tuit.handle} · {tuit.time}</span>
                  <i className="bi bi-x-lg float-end"
             onClick={() => deleteTuitHandler(tuit._id)}></i>
@@ -50,15 +60,12 @@ const unlikeTuitHandler = (id) => {
             <div className="wd-icons wd-gray">
                 <i class="bi bi-chat"></i><span className="ps-2 pe-5 me-2"> {tuit.replies}</span>
                 <i class="bi bi-arrow-repeat"></i><span className="ps-2 pe-5 me-2"> {tuit.retuits}</span>
-                
-                {tuit.liked && <i onClick={() => unlikeTuitHandler(tuit)} className="bi bi-heart-fill wd-red"></i>}
+                {tuit.liked && <i onClick={() => unlikeTuitHandler(tuit)} className="bi bi-heart-fill text-danger"></i>}
                 {!tuit.liked && <i onClick={() => likeTuitHandler(tuit)} className="bi bi-heart"></i>}
-               
-                ️<span className="ps-2 pe-5 me-2">️ {tuit.likes}</span>
+                <span className="ps-2 pe-5 me-2"> {tuit.likes}</span>
                 <i class="bi bi-share"></i>️<span className="ps-2 pe-5 me-2"></span>
             </div>
         </div>
-
     </div>
   </li>
  );

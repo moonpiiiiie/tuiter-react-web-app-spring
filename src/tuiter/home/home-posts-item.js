@@ -32,7 +32,7 @@ const HomePostItem = (
     <div class="d-flex w-100">
 
         <div className="me-2">
-            <img alt="" width={48}  className="float-start rounded-circle" src={`/tuiter/images/${homepost.avatarIcon}`}/>
+            <img alt="" width={48}  className="float-start rounded-circle" src={`/images/${homepost.avatarIcon}`}/>
         </div>
         <div>
             <div>
