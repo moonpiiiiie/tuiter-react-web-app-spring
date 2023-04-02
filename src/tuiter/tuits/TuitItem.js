@@ -17,6 +17,8 @@ const TuitItem = (
    "replies": 123,
    "retuits": 432,
    "likes": 2345,
+   "dislikes": 345,
+   "disliked": false,
    "handle": "@spacex",
    "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
    }
@@ -43,6 +45,21 @@ const unlikeTuitHandler = (tuit) => {
   }));
 }
 
+const dislikeTuitHandler = (tuit) => {
+  dispatch(updateTuitThunk({
+      ...tuit,
+      dislikes: tuit.dislikes + 1,
+      disliked: true
+  }));
+}
+const unDislikeTuitHandler = (tuit) => {
+  dispatch(updateTuitThunk({
+      ...tuit,
+      dislikes: tuit.dislikes - 1,
+      disliked: false
+  }));
+}
+
  return(
   <li className="list-group-item">
     <div className="row">
@@ -63,6 +80,9 @@ const unlikeTuitHandler = (tuit) => {
                 {tuit.liked && <i onClick={() => unlikeTuitHandler(tuit)} className="bi bi-heart-fill text-danger"></i>}
                 {!tuit.liked && <i onClick={() => likeTuitHandler(tuit)} className="bi bi-heart"></i>}
                 <span className="ps-2 pe-5 me-2"> {tuit.likes}</span>
+                {tuit.disliked && <i onClick={() => unDislikeTuitHandler(tuit)} className="bi bi-hand-thumbs-down-fill text-danger"></i>}
+                {!tuit.disliked && <i onClick={() => dislikeTuitHandler(tuit)} className="bi bi-hand-thumbs-down"></i>}
+                <span className="ps-2 pe-5 me-2"> {tuit.dislikes}</span>
                 <i class="bi bi-share"></i>️<span className="ps-2 pe-5 me-2"></span>
             </div>
         </div>
